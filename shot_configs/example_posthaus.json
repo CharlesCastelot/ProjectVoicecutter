@@ -1,0 +1,23 @@
+{
+    "_comment": "Example alternate config — swap this file in when working at a different post house or with a different editor.",
+    "separator": " - ",
+    "case": "upper",
+    "description_format": "{shot}{separator}{description}",
+    "shots": {
+        "wide": "WS",
+        "wide shot": "WS",
+        "close up": "CU",
+        "close": "CU",
+        "medium close up": "MCU",
+        "medium": "MS",
+        "med": "MS",
+        "over the shoulder": "OTS",
+        "ots": "OTS",
+        "insert": "INS",
+        "pov": "POV",
+        "two shot": "2S",
+        "aerial": "AER",
+        "extreme close up": "ECU",
+        "ecu": "ECU"
+    }
+}

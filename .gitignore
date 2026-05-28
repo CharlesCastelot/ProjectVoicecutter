@@ -1,0 +1,63 @@
+# ─────────────────────────────────────────────────────────────
+# Python virtual environment (machine-specific, huge — recreate with `uv sync`)
+# ─────────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ─────────────────────────────────────────────────────────────
+# Python bytecode / caches (regenerated automatically)
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ─────────────────────────────────────────────────────────────
+# Vosk model (68 MB third-party download — see README for link)
+# ─────────────────────────────────────────────────────────────
+vosk-model-small-en-us/
+vosk-model-*/
+
+# ─────────────────────────────────────────────────────────────
+# Runtime logs (regenerated every run)
+# ─────────────────────────────────────────────────────────────
+*.log
+commands.log
+
+# ─────────────────────────────────────────────────────────────
+# Machine-specific calibration & caches (created per-computer on
+# first run / first calibration — these hold YOUR screen
+# coordinates and DPI and would be wrong on any other machine)
+# ─────────────────────────────────────────────────────────────
+ImageReference/.search_box.json
+ImageReference/.search_bar.json
+ImageReference/.default_roi.json
+ImageReference/.premiere_dpi.json
+ImageReference/.dpi_gen_meta.json
+ImageReference/.scale_cache.json
+ImageReference/.uia_cache.json
+# (catch-all for any other dotfile cache in there)
+ImageReference/.*.json
+ImageReference/_debug/
+
+# ─────────────────────────────────────────────────────────────
+# Claude Code local settings (personal permissions / locks)
+# ─────────────────────────────────────────────────────────────
+.claude/
+
+# ─────────────────────────────────────────────────────────────
+# Leftover source archives (templates already extracted into
+# ImageReference/ — these .zips are redundant build artifacts)
+# ─────────────────────────────────────────────────────────────
+*.zip
+
+# ─────────────────────────────────────────────────────────────
+# OS / editor cruft
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

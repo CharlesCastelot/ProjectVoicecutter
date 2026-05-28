@@ -1,0 +1,15 @@
+{
+    "hold control": {
+        "type": "script",
+        "path": "scripts\\hold_ctrl.py"
+    },
+    "search": {
+        "type": "script",
+        "path": "customScripts\\TranscriptSearch.py",
+        "accepts_params": true
+    },
+    "lumetri color": {
+        "type": "image",
+        "path": "Lumetri color.png"
+    }
+}

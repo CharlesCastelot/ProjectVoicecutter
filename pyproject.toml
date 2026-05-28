@@ -1,0 +1,46 @@
+[project]
+name = "voicecutter"
+version = "0.1.0"
+description = "Voice command system for Adobe Premiere Pro"
+requires-python = ">=3.14"
+
+dependencies = [
+    # Core STT
+    "faster-whisper==1.2.1",
+    "ctranslate2==4.7.1",
+    # CUDA 12 DLLs — required on Windows so ctranslate2 can find cublas/cudnn.
+    # On a CPU-only machine these can be omitted; faster-whisper will fall back
+    # to small.en on CPU automatically.
+    "nvidia-cublas-cu12==12.9.2.10",
+    "nvidia-cuda-runtime-cu12==12.9.79",
+    "nvidia-cudnn-cu12==9.20.0.48",
+    # Wake word detection
+    "openwakeword==0.6.0",
+    # GUI automation & screen interaction
+    "pillow>=11.0.0",
+    "pyautogui==0.9.54",
+    "pywinauto==0.6.9",
+    "pywin32==311",
+    "opencv-python==4.13.0.92",
+    # Audio
+    "sounddevice==0.5.1",
+    # NLP / matching
+    "rapidfuzz==3.14.3",
+    # Utilities
+    "numpy==2.4.2",
+    "pyperclip==1.11.0",
+    "pynput>=1.8.1",
+    "keyboard>=0.13.5",
+    # Vosk — offline STT for restricted-grammar command recognition
+    "vosk>=0.3.45",
+]
+
+[project.scripts]
+voicecutter = "main:main"
+
+[tool.uv]
+# The nvidia CUDA packages ship Windows-only DLLs; exclude them on non-Windows.
+environments = ["sys_platform == 'win32'"]
+
+[tool.uv.sources]
+# No custom indexes needed — all packages are on PyPI.

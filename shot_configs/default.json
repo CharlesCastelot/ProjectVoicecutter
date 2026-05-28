@@ -1,0 +1,26 @@
+{
+    "separator": "_",
+    "case": "title",
+    "description_format": "{shot}{separator}{description}",
+    "shots": {
+        "wide": "Wide",
+        "wide shot": "Wide",
+        "close up": "Close Up",
+        "close-up": "Close Up",
+        "close": "Close Up",
+        "medium close up": "Medium Close Up",
+        "medium close": "Medium Close Up",
+        "mcu": "Medium Close Up",
+        "medium": "Medium",
+        "med": "Medium",
+        "over the shoulder": "Over The Shoulder",
+        "ots": "Over The Shoulder",
+        "insert": "Insert",
+        "pov": "POV",
+        "two shot": "Two Shot",
+        "2 shot": "Two Shot",
+        "aerial": "Aerial",
+        "extreme close up": "Extreme Close Up",
+        "ecu": "Extreme Close Up"
+    }
+}

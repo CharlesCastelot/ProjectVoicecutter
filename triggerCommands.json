@@ -1,0 +1,6 @@
+{
+  "_instructions": {
+    "how_to_add": "Add a trigger word and point it to a Python script. When you say the trigger word followed by any text, the script runs and receives that text as the first argument (sys.argv[1]).",
+    "example": "Say 'marker Wright's Chapel intro' → runs marker.py with sys.argv[1] = \"wright's chapel intro\""
+  }
+}
